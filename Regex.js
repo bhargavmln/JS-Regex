@@ -11,9 +11,9 @@ console.log(validatePin('400088B'));//UC3
 console.log(validatePin('400 088'));//UC4
 
 //Validate Email
-let emailRegex  = RegExp('^[a-z0-9]+')
+let emailRegex  = RegExp('^[a-z0-9]+[@]{1}[A-Za-z0-9]+')
 function validateEmail(email) {
     if(emailRegex.test(email)) return "Valid email";
     else return "Invalid email";
 }
-console.log(validateEmail('1abc100'));//UC1
+console.log(validateEmail('abc100@Bridgelabz123'));//UC2
